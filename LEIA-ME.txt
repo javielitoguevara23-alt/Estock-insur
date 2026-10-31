@@ -1,0 +1,33 @@
+ESTOCK INSUR — VERSÃO ATUALIZADA
+
+ARQUIVOS
+- index.html: sistema e seções.
+- style.css: visual responsivo e animação de voz do Jarvis.
+- jarvis-reactor.jfif: imagem do núcleo visual do Jarvis.
+- script.js: estoque, importação CSV, taxas BCV e assistente Jarvis local.
+- estock_insur_productos_importar.csv: catálogo CSV incluído.
+
+SEÇÕES
+- Productos: consulta do catálogo com busca e filtros Todos, Disponibles, No disponibles e Stock bajo.
+- Agregar / Eliminar: área separada para cadastrar e excluir produtos.
+- Importar CSV: importação independente de arquivos CSV.
+- Jarvis com tela de voz clara inspirada na experiência de voz do ChatGPT e imagem original do reator.
+- Ventas y Movimientos: vendas e movimentos aparecem juntos na mesma página.
+
+COMPATIBILIDADE
+O projeto usa HTML, CSS e JavaScript sem bibliotecas obrigatórias e foi preparado para navegadores modernos como Microsoft Edge, Opera e Google Chrome. Recomenda-se abrir pelo VS Code com a extensão Live Server (http://localhost), não diretamente pelo arquivo.
+
+IMPORTANTE SOBRE OS DADOS
+Os dados são guardados no armazenamento local de cada navegador. Opera, Edge e Chrome podem manter cópias separadas: usar o mesmo projeto nos três não sincroniza automaticamente os dados. Para compartilhar o mesmo estoque entre navegadores e computadores, será necessário conectar uma base de dados na nuvem, como Supabase ou Firebase. Faça exportações CSV de segurança regularmente.
+
+IMPORTAR O CATÁLOGO
+1. Abra a seção Importar CSV.
+2. Selecione estock_insur_productos_importar.csv.
+3. Clique em Importar productos.
+4. Os códigos já cadastrados são ignorados para evitar duplicatas.
+
+OBSERVAÇÕES
+- Jarvis é um assistente local baseado em regras e nos dados do inventário; não é uma IA generativa conectada à internet.
+- O reconhecimento de voz depende do navegador e das permissões do microfone; se não estiver disponível, use o campo de texto.
+- A atualização das taxas BCV requer internet.
+- A sincronização entre navegadores/dispositivos ainda não está ativada.
